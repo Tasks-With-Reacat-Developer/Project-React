@@ -1,0 +1,54 @@
+.Products{
+  padding: 50px 0;
+}
+
+.Products table{
+  border: 1px solid #DDD;
+  border-collapse: collapse;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.Products table thead{
+  padding: 5px;
+  background: var(--main-background); 
+  color: #FFF;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.Products table thead th{
+  padding: 5px;
+}
+
+.Products table tbody{
+  text-align:center;
+}
+
+.Products table :is(td,th){
+  user-select: none;
+  border: 1px solid #DDD;
+}
+
+
+.Products table td{
+  padding: 10px;
+}
+
+.Products table tbody td:first-of-type{
+  text-align:left;
+}
+
+.Products table tbody .btn{
+  width: 100px;
+  padding: 5px;
+}
+
+.Products table tbody .btn button{
+  padding: 10px 15px;
+  border: none;
+  background: #ff2802;
+  color: #FFF;
+  border-radius: 4px;
+  cursor: pointer;
+}

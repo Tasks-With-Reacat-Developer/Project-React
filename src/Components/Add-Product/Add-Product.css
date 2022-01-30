@@ -1,0 +1,49 @@
+.Add-Product{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  width: 500px;
+  margin: 50px auto; 
+}
+
+.Add-Product h2{
+  font-weight:bold;
+  padding: 30px 0;
+} 
+
+.Add-Product form{
+  text-align: center;
+  width: 100%;
+} 
+
+.Add-Product form :is(input,textarea,select){
+  width: 80%;
+  margin-bottom: 7px;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+}
+
+.Add-Product form :is(input,select){
+  padding: 13px 20px;
+}
+
+.Add-Product form textarea{
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+}
+
+.Add-Product form :is(input:focus,textarea:focus){
+  outline: none;
+}
+.Add-Product form :is(input:focus::placeholder,textarea:focus::placeholder){
+  opacity: 0;
+}
+
+.Add-Product form input[type='submit']{
+  background-image: var(--main-background);
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+}

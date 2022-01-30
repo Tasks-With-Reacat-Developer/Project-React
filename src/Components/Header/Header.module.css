@@ -1,0 +1,123 @@
+header {
+  background-color: #333;
+  overflow: hidden;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav h2 {
+  margin: 0;
+  color: #FFF;
+  user-select: none;
+}
+
+header nav .List {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+header nav .List li a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 18px;
+}
+
+header nav .Logout {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+header nav .Logout .imgs {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  transition: .5s;
+  user-select: none;
+}
+
+header nav .Logout .imgs img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FFF;
+}
+
+header nav .Logout .imgs h3 {
+  color: #FFF;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+header nav .Logout .imgs span{
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+header nav .Logout .info {
+  position: absolute;
+  top: 50px;
+  background-color: #333;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+  width: 160px;
+  border-top: 2px solid var(--main-color);
+  visibility: hidden;
+  opacity: 0;  
+  transition: all .4s ease-out;
+  z-index: 3;
+  user-select: none;
+  z-index: 3;
+}
+
+header nav .Logout .info.Drop {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+header nav .Logout .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav .Logout .info ul li {
+  padding: 5px;
+  position: relative;
+}
+
+header nav .Logout .info ul li:last-of-type{
+  margin-bottom: 10px;
+}
+
+header nav .Logout .info ul li a{
+  text-decoration: none;
+  color: #FFF;
+}
+header nav .Logout button {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 4px;
+  background-image: var(--main-background);
+  color: #FFF;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

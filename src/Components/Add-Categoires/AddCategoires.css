@@ -1,0 +1,72 @@
+.AddCategoires{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  width: 400px;
+  z-index: 3;
+  transition:  all .5s ease-out;
+  padding: 10px ;
+}
+
+.AddCategoires h3{
+  user-select: none;
+  padding-left: 4px;
+}
+
+.AddCategoires form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.AddCategoires form input {
+  padding: 10px 20px;
+  width: 100%;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+}
+.AddCategoires form input:focus{
+  outline: none;
+}
+
+.AddCategoires form input:focus::placeholder{
+  opacity: 0;
+}
+
+.AddCategoires form button{
+  padding: 15px 40px;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  background-image: var(--main-background);
+  color: #FFF;
+  font-weight: bold;
+  font-size:  14px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* .AddCategoires form button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition:  .3s;
+}
+.AddCategoires form button:hover::before{
+  width: 100%;
+}
+
+.AddCategoires form button:hover{
+  color: #FFF;
+} */

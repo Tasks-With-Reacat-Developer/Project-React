@@ -1,0 +1,43 @@
+.Categories{
+  margin: 40px auto;
+}
+
+.Categories .Category{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+.Categories .Category button{
+  padding: 15px 20px;
+  background-image: var(--main-background);
+  border: 1px solid #DDD;
+  color: #FFF;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Categories :is(.Category h3, .info h2){
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  user-select: none;
+}
+
+.Categories .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.Categories .info button{
+  padding: 10px 20px;
+  background: #ff2802;
+  border: 1px solid #EEE;
+  color: #FFF;
+  border-radius: 4px;
+  cursor: pointer;
+}
